@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dunes Study Hub - Grades Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "sidebar">
+                <a href="{{url_for('main')}}">Home</a>
+                <br>
+                <a href="{{url_for('pomodoro')}}">Pomodoro</a>
+                <br>
+                <a href="{{url_for('docs')}}">Documentations</a>
+                <br>
+                <a href="{{url_for('study_methods')}}">Study methods</a>
+                <br>
+                <a href="{{url_for('grades_calc')}}">Grades Calculator</a>
+                <br>
+                <a href="{{url_for('flashcards')}}">Flashcards</a>
+                <br>
+                <a href="{{url_for('sdg')}}">SDG</a>
+                <br>
+                <a href="{{url_for('nim')}}">NIM</a>
+                <br>
+            </div>
+            <div class="grades-container">
+                <div id="grades-report" class="grades-report">
+                    <h3>Report</h3>
+                </div>
+                <input type="text" id="grades-entry" placeholder="Enter marks (out of 80), subject e.g., 75, English">
+                <div class="buttons">
+                    <button id="add-btn">Add</button>
+                    <button id="done-btn">Done</button>
+                </div>
+                <div class="added_grades">
+                    <h3>Added Grades</h3>
+                    <ul id="grades-list"></ul>
+                </div>
+            </div>
+            </div>
+        <script src="{{url_for('static', filename='grades_calc.js')}}"></script>
+    </body>
+</html>

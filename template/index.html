@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dunes Study Hub</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "sidebar">
+                <a href="{{url_for('main')}}">Home</a>
+                <br>
+                <a href="{{url_for('pomodoro')}}">Pomodoro</a>
+                <br>
+                <a href="{{url_for('docs')}}">Documentations</a>
+                <br>
+                <a href="{{url_for('study_methods')}}">Study methods</a>
+                <br>
+                <a href="{{url_for('grades_calc')}}">Grades Calculator</a>
+                <br>
+                <a href="{{url_for('flashcards')}}">Flashcards</a>
+                <br>
+                <a href="{{url_for('sdg')}}">SDG</a>
+                <br>
+                <a href="{{url_for('nim')}}">NIM</a>
+                <br>
+            </div>
+            <div class="content">
+                <div class="header">
+                    <h1>WELCOME TO DUNES STUDY HUB</h1>
+                    <div class="header2">
+                        <img src="{{url_for('static', filename='dis_logo.png')}}" alt="Dunes International School Logo" width="100" height="100">
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+                        <h3>Dunes International School</h3>
+                    </div>
+                </div>
+                <br>
+                <div class="quick_start">
+                    <h2>Welcome to the school's official study hub</h2>
+                    <p>
+                        Here, you will find tools designed to help every student focus, learn and improve from any grade level.
+                    </p>
+                    <br>
+                    <div class="quick_start_btns">
+                        <a href="{{url_for('pomodoro')}}">
+                            <button>Start Pomodoro</button>
+                        </a>
+                        <a href="{{url_for('flashcards')}}">
+                            <button>Create a set of Flashcards</button>
+                        </a>
+                    </div>
+                </div>
+                <br>
+                <div class="explore_tools">
+                    <h2>Explore tools</h2>
+                    <p>Check out some of our tools designed to help students.</p>
+                    <div class="tools-grid">
+                        <a href="{{url_for('pomodoro')}}"><button>Pomodoro</button></a>
+                        <a href="{{url_for('docs')}}"><button>Documentations</button></a>
+                        <a href="{{url_for('study_methods')}}"><button>Study Methods</button></a>
+                        <a href="{{url_for('grades_calc')}}"><button>Grades Calculator</button></a>
+                        <a href="{{url_for('flashcards')}}"><button>Flashcards</button></a>
+                        <a href="{{url_for('sdg')}}"><button>SDG</button></a>
+                        <a href="{{url_for('nim')}}"><button>NIM</button></a>
+                    </div>
+                </div>
+                <br>
+                <div class="how_to_use">
+                    <h2>How to use?</h2>
+                    <p>
+                        <ol>
+                            <li>Plan your work in the <a href="{{url_for('pomodoro')}}">pomodoro</a> to-do list section.</li>
+                            <li>Start a <a href="{{url_for('pomodoro')}}">pomodoro</a>.</li>
+                            <li>Review some <a href="{{url_for('flashcards')}}">flashcards</a>.</li>
+                            <li>Use the study methods in <a href="{{url_for('study_methods')}}">study methods</a></li>
+                        </ol>
+                    </p>
+                </div>
+                <br>
+                <div class="study_tip">
+                    <h2>Study tip</h2>
+                    <p id="study_tip"></p>
+                    <button id="new_tip_btn">New tip</button>
+                </div>
+                <br>
+                <div class="footer">
+                    Dunes Study Hub © 2026 <br>
+                    Home | Pomodoro | Flashcards | Docs | Calculator <br>
+                    Contact: joelmendonca.2602@gmail.com
+                </div>
+            </div>
+        </div>
+        <script src="{{url_for('static', filename='index.js')}}"></script>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dunes Study Hub - SDG</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "sidebar">
+                <a href="{{url_for('main')}}">Home</a>
+                <br>
+                <a href="{{url_for('pomodoro')}}">Pomodoro</a>
+                <br>
+                <a href="{{url_for('docs')}}">Documentations</a>
+                <br>
+                <a href="{{url_for('study_methods')}}">Study methods</a>
+                <br>
+                <a href="{{url_for('grades_calc')}}">Grades Calculator</a>
+                <br>
+                <a href="{{url_for('flashcards')}}">Flashcards</a>
+                <br>
+                <a href="{{url_for('sdg')}}">SDG</a>
+                <br>
+                <a href="{{url_for('nim')}}">NIM</a>
+                <br>
+            </div>
+            <div class="sdg_explaination">
+                <img src="{{url_for('static', filename='sdg.jpg')}}" alt="The Sustainable Development Goals" width="800" height="500">            
+                <br>
+                <br>
+                The Sustainable Development Goals (SDGs) are a collection of 17 global goals established by the United Nations in 2015 as a universal "call to action" to end poverty, protect the planet, and ensure peace and prosperity for all by 2030. Also known as the Global Goals, they are integrated, meaning action in one area affects others. 
+                United Nations Development Programme <br>
+                Key Aspects of the SDGs:<br>
+                Purpose: To tackle issues like poverty, inequality, climate change, environmental degradation, and justice. <br>
+                Framework: The 17 goals are structured around 5 pillars (the "5 Ps"): People, Planet, Prosperity, Peace, and Partnership.<br>
+                Timeframe: They were adopted in 2015, with a target date for achievement by 2030.<br>
+                Scope: They are universally applicable to both developed and developing nations.<br>
+                Interdependence: The goals recognize that tackling climate change and environmental issues must go hand-in-hand with social and economic development. <br>
+                The 17 Goals Include:
+                <ol>
+                    <li>No Poverty: End poverty in all forms.</li>
+                    <li>Zero Hunger: Achieve food security and improved nutrition.</li>
+                    <li>Good Health and Well-being: Ensure healthy lives and promote well-being.</li>
+                    <li>Quality Education: Ensure inclusive and equitable quality education.</li>
+                    <li>Gender Equality: Achieve gender equality and empower all women and girls.</li>
+                    <li>Clean Water and Sanitation: Ensure availability and sustainable management of water.</li>
+                    <li>Affordable and Clean Energy: Ensure access to affordable, sustainable energy.</li>
+                    <li>Decent Work and Economic Growth: Promote sustained, inclusive economic growth.</li>
+                    <li>Industry, Innovation, and Infrastructure: Build resilient infrastructure and foster innovation.</li>
+                    <li>Reduced Inequalities: Reduce inequality within and among countries.</li>
+                    <li>Sustainable Cities and Communities: Make cities inclusive, safe, and resilient.</li>
+                    <li>Responsible Consumption and Production: Ensure sustainable consumption and production.</li>
+                    <li>Climate Action: Take urgent action to combat climate change.</li>
+                    <li>Life Below Water: Conserve and sustainably use oceans and marine resources.</li>
+                    <li>Life on Land: Protect, restore, and promote sustainable use of terrestrial ecosystems.</li>
+                    <li>Peace, Justice, and Strong Institutions: Promote peaceful, inclusive societies.</li>
+                    <li>Partnerships for the Goals: Strengthen global partnerships for sustainable development.</li>
+                </ol>
+            </div>
+        </div>
+    </body>
+</html>

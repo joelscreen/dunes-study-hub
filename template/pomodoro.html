@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dunes Study Hub - Pomodoro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "sidebar">
+                <a href="{{url_for('main')}}">Home</a>
+                <br>
+                <a href="{{url_for('pomodoro')}}">Pomodoro</a>
+                <br>
+                <a href="{{url_for('docs')}}">Documentations</a>
+                <br>
+                <a href="{{url_for('study_methods')}}">Study methods</a>
+                <br>
+                <a href="{{url_for('grades_calc')}}">Grades Calculator</a>
+                <br>
+                <a href="{{url_for('flashcards')}}">Flashcards</a>
+                <br>
+                <a href="{{url_for('sdg')}}">SDG</a>
+                <br>
+                <a href="{{url_for('nim')}}">NIM</a>
+                <br>
+            </div>
+            <div class="timer_section">
+                <div class="pomodoro_timer">
+                    <h1 class="title" id="title">Pomodoro</h1>
+                    <hr>
+                    <p class="timer" id="timer">25:00</p>
+                    <div class="button_wrapper">
+                        <button class="start" id="start">Start</button>
+                        <button class="stop" id="stop">Stop</button>
+                        <button class="reset" id="reset">Reset </button>
+                    </div>
+                </div>
+                <br>
+                <div class="cycles" id="cycles">
+                    Cycles: 0/3
+                </div>
+            </div>
+            <div>
+            <div class="todo-container">
+                <h2>To-Do List</h2>
+                <div class="todo-input">
+                    <input type="text" id="todo-entry" placeholder="Enter a new task">
+                    <button id="add-todo">Add</button>
+                </div>
+                <ul id="todo-list"></ul>
+            </div>
+            <div class="pomodoro_set">
+                <button onclick="white_noise()">White Noise</button>
+            </div>
+            </div>
+        </div>
+        <script src="{{url_for('static', filename='pomodoro.js')}}"></script>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dunes Study Hub - Documentations</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "sidebar">
+                <a href="{{url_for('main')}}">Home</a>
+                <br>
+                <a href="{{url_for('pomodoro')}}">Pomodoro</a>
+                <br>
+                <a href="{{url_for('docs')}}">Documentations</a>
+                <br>
+                <a href="{{url_for('study_methods')}}">Study methods</a>
+                <br>
+                <a href="{{url_for('grades_calc')}}">Grades Calculator</a>
+                <br>
+                <a href="{{url_for('flashcards')}}">Flashcards</a>
+                <br>
+                <a href="{{url_for('sdg')}}">SDG</a>
+                <br>
+                <a href="{{url_for('nim')}}">NIM</a>
+                <br>
+            </div>
+            <div class="content">
+                <div class = "doc">
+                    <h1>Pythagorean Theorum - Documentations</h1>
+                    <p>
+                    The Pythagorean theorem is a rule about right‑angled triangles: if a triangle has a 90° corner, then <br>
+                    short side<sup>2</sup> + other short side<sup>2</sup> = long side<sup>2</sup>
+                    </p>
+                    <h2>1. What type of triangle are we talking about?</h2><br>
+                    A right-angled triangle is a triangle with one corner that is exactly 90<deg> (like the corner of a piece of paper).<br>
+                    <br>
+                    The longest side, opposite the 90° angle, is called the hypotenuse. The other two sides are just the two shorter sides (often called a and b).<br>
+                    <br>
+                    <h2>2. What does the theorem actually mean?</h2><br>
+                    Take each short side, multiply it by itself (that’s what “squared” means), then add those two results.<br>
+                    <br>
+                    You will get the same number as if you square the long side (the hypotenuse): <br>
+                    a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup><br>
+                    <br>
+                    Example: suppose the two short sides are 3 and 4.<br>
+                    3<sup>2</sup> = 9, <br>
+                    4<sup>2</sup> = 16, and <br>
+                    9 + 16 = 25.<br>
+                    <br>
+                    The long side must satisfy c<sup>2</sup> = 25, so c = 5. That's why 3-4-5 is a famous right triangle.<br>
+                    <br>
+                    <h2>3. How to use it?</h2><br>
+                    If you know the two short sides and want the long side:<br>
+                    <br>
+                    Square each short side (a and b).<br>
+                    <br>
+                    Add the two answers: a<sup>2</sup> + b<sup>2</sup>.<br>
+                    <br>
+                    Take the square root of that sum to get the hypotenuse c.<br>
+                    <br>
+                    If you know the hypotenuse and one short side and want the missing short side:<br>
+                    <br>
+                    Square the hypotenuse and the known short side.<br>
+                    <br>
+                    Subtract: hypotenuse<sup>2</sup> - known short side<sup>2</sup>.<br>
+                    <br>
+                    Take the square root of that result to get the missing side.<br>
+                    <br>
+                    <h2>4. Practice questions</h2><br>
+                    Find the hypotenuse of triangles with base and perpendicular: <br>
+                    <ul>
+                        <li>3, 4</li>
+                        <li>5, 12</li>
+                        <li>6, 8</li>
+                    </ul>
+                    <br>
+                </div>
+                <br>
+                <div class="doc_footer">
+                    Please submit a document of your choice to <a href="mailto:joelmendonca.2602@gmail.com">joelmendonca.2602@gmail.com</a> to be featured in this website.
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

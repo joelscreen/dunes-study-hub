@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dunes Study Hub - Flashcards</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "sidebar">
+                <a href="{{url_for('main')}}">Home</a>
+                <br>
+                <a href="{{url_for('pomodoro')}}">Pomodoro</a>
+                <br>
+                <a href="{{url_for('docs')}}">Documentations</a>
+                <br>
+                <a href="{{url_for('study_methods')}}">Study methods</a>
+                <br>
+                <a href="{{url_for('grades_calc')}}">Grades Calculator</a>
+                <br>
+                <a href="{{url_for('flashcards')}}">Flashcards</a>
+                <br>
+                <a href="{{url_for('sdg')}}">SDG</a>
+                <br>
+                <a href="{{url_for('nim')}}">NIM</a>
+                <br>
+            </div>
+            <div class = "add_flashcards_con" id = "flashcards">
+                <br>
+                <button id="add_flashcard">Add Flashcards</button>
+            </div>
+            <div class = "question_container" id = "question_container">
+                <h2>Add Flashcard</h2>
+                <div class = "wrapper">
+                    <i class="fa-solid fa-xmark" id="close-btn"></i>
+                </div>
+                <label for="question">Question</label>
+                <textarea id="question" class="input" placeholder="Type the question here..." rows="2"></textarea>
+                <label for="answer">Answer</label>
+                <textarea class="input" id="answer" rows="2" placeholder="Type the answer here..."></textarea>
+                <button id="save-btn">Save</button>
+            </div>
+        </div>
+        <div class = "card_con">
+            <div class = "card_list_container"></div>
+        </div>
+        <div class = "question_container_hide" id = "add_question"></div>
+        <script src = "{{url_for('static', filename='flashcards.js')}}"></script>
+    </body>
+</html>

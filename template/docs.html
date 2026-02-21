@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dunes Study Hub - Documentations</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "sidebar">
+                <a href="{{url_for('main')}}">Home</a>
+                <br>
+                <a href="{{url_for('pomodoro')}}">Pomodoro</a>
+                <br>
+                <a href="#">Documentations</a>
+                <br>
+                <a href="{{url_for('study_methods')}}">Study methods</a>
+                <br>
+                <a href="{{url_for('grades_calc')}}">Grades Calculator</a>
+                <br>
+                <a href="{{url_for('flashcards')}}">Flashcards</a>
+                <br>
+                <a href="{{url_for('sdg')}}">SDG</a>
+                <br>
+                <a href="{{url_for('nim')}}">NIM</a>
+                <br>
+            </div>
+            <div class="content">
+                <div class = "docs">
+                    <h1>Documentations:-</h1><br>
+                    The documentations section is a place where you can get detailed explaination on a certain topic. More topics will be coming soon.
+                    <hr>
+                </div>
+                <br>
+                <div class="featured_docs">
+                    <h2>Featured topics</h2>
+                    <div class="featured_topics">
+                        <ol>
+                            <li>Pythagorean Theorem &nbsp;&nbsp;&nbsp; <a href="{{url_for('pyth_theo')}}">[READ MORE]</a></li>
+                            <li>Effective note-taking &nbsp;&nbsp;&nbsp; <a href="">[READ MORE]</a></li>
+                            <li>Photosynthesis &nbsp;&nbsp;&nbsp; <a href="">[READ MORE]</a></li>
+                        </ol>
+                    </div>
+                </div>
+                <br>
+                <div class="main_content">
+                    <h2>Main Content</h2>
+                    <div class="main_content_area">
+                        <div class="topic">
+                            <a href="{{url_for('pyth_theo')}}"><button class="show_btn">Show</button></a> &nbsp;&nbsp;&nbsp; Pythagorean Theorem
+                        </div>
+                        <br>
+                        <div class="topic">
+                            <a href="#"><button class="show_btn">Show</button></a> &nbsp;&nbsp;&nbsp; Effective Note Taking
+                        </div>
+                        <br>
+                        <div class="topic">
+                            <a href="#"><button class="show_btn">Show</button></a> &nbsp;&nbsp;&nbsp; Photosynthesis
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="{{url_for('static', filename='docs.js')}}"></script>
+    </body>
+</html>
