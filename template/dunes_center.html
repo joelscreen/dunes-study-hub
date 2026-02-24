@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dunes Study Hub - Dunes Center</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
+    </head>
+    <body>
+        <div class="container">
+            <div class="sidebar">
+                <a href="{{url_for('main')}}">Home</a>
+                <br>
+                <a href="{{url_for('pomodoro')}}">Pomodoro</a>
+                <br>
+                <a href="{{url_for('docs')}}">Documentations</a>
+                <br>
+                <a href="{{url_for('study_methods')}}">Study methods</a>
+                <br>
+                <a href="{{url_for('grades_calc')}}">Grades Calculator</a>
+                <br>
+                <a href="{{url_for('flashcards')}}">Flashcards</a>
+                <br>
+                <a href="{{url_for('sdg')}}">SDG</a>
+                <br>
+                <a href="{{url_for('nim')}}">NIM</a>
+                <br>
+                <a href="{{url_for('dunes_center')}}">Dunes Center</a>
+                <br>
+            </div>
+            <div class="content">
+            <div class="dunes_center_header">
+                <h1>Dunes Center:-</h1><br>
+                Dunes Center is a section solving multiple problems of the school.
+                <hr>
+            </div>
+            <br>
+            <div class="dunes_center_content">
+                <div class="dunes_center_items">
+                    Lost and Found
+                    <div>
+                        <a href="">
+                            <button>Visit page</button>
+                        </a>
+                    </div>
+                </div>
+                &emsp;
+                &emsp;
+                <div class="dunes_center_items">
+                    Topic rater
+                    <div>
+                        <a href="">
+                            <button>Visit page</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
