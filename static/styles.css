@@ -473,7 +473,7 @@ textarea:focus {
 .explore_tools {
   display: flex;
   height: auto;
-  width: 41vw;
+  width: auto;
   border-radius: 5%;
   background-color: rgb(255, 255, 255, 0.20);
   align-items: center;
@@ -751,18 +751,34 @@ textarea:focus {
   margin-top: 20px;
 }
 
-@media (max-width: 700px) {
-  .explore_tools {
-    display: flex;
-    height: auto;
-    width: 40rem;
-    border-radius: 5%;
-    background-color: rgb(255, 255, 255, 0.20);
-    align-items: center;
-    justify-content: center; 
-    flex-direction: column;
-    padding: 1em 1em;
-    margin-left: 20%;
-    color: white;
-  }
+.dunes_center_header {
+  display: flex;
+  height: auto;
+  width: 78vw;
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255, 0.20);
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 3em;
+  color: white;
+  font-size: 17px;
+}
+
+.dunes_center_items {
+  display: flex;
+  height: auto;
+  width: 150px;
+  border-radius: 50px;
+  background-color: rgb(255, 255, 255, 0.20);
+  padding: 2em;
+  flex-direction: column;
+  line-height: 300%;
+  align-items: center;
+  color: white;
+  font-size: 21px;
+}
+
+.dunes_center_content {
+  display: flex;
+  flex-direction: row;
 }
