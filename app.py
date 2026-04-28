@@ -2,8 +2,6 @@ from flask import Flask, render_template, url_for
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///test.db'
-db = SQLAlchemy(app)
 
 @app.route("/")
 def main():
@@ -41,11 +39,9 @@ def docs():
 def pyth_theo():
     return render_template("pythagorean_theorum.html")
 
-@app.route("/dunes-center", methods=['POST', 'GET'])
+@app.route("/dunes-center")
 def dunes_center():
     return render_template("dunes_center.html")
 
 if __name__ == "__main__":
-    with app.app_context():
-        db.create_all()
     app.run(host="0.0.0.0", port=5000, debug=True)
